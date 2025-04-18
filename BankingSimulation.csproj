@@ -79,6 +79,19 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DepositForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepositForm.Designer.cs">
+      <DependentUpon>DepositForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loan.cs" />
+    <Compile Include="LoanRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoanRequestForm.Designer.cs">
+      <DependentUpon>LoanRequestForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,13 +106,44 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Transaction.cs" />
+    <Compile Include="TransactionHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionHistoryForm.Designer.cs">
+      <DependentUpon>TransactionHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransferForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransferForm.Designer.cs">
+      <DependentUpon>TransferForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <Compile Include="UserManager.cs" />
+    <Compile Include="ViewBalanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBalanceForm.Designer.cs">
+      <DependentUpon>ViewBalanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WithdrawForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WithdrawForm.Designer.cs">
+      <DependentUpon>WithdrawForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="createaccount.resx">
       <DependentUpon>createaccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepositForm.resx">
+      <DependentUpon>DepositForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoanRequestForm.resx">
+      <DependentUpon>LoanRequestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -116,6 +160,18 @@
     </Compile>
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionHistoryForm.resx">
+      <DependentUpon>TransactionHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransferForm.resx">
+      <DependentUpon>TransferForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBalanceForm.resx">
+      <DependentUpon>ViewBalanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WithdrawForm.resx">
+      <DependentUpon>WithdrawForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

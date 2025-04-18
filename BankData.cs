@@ -10,5 +10,7 @@ namespace BankingSimulation
     public static class BankData
     {
         public static List<BankAccount>Accounts=new List<BankAccount>();
+        public static List<Loan>Loans=new List<Loan>();
+        public static List<Transaction> Transactions=new List<Transaction>();
     }
 }

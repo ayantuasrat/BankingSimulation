@@ -49,6 +49,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Navy;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 1);
@@ -70,6 +71,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(442, 152);
@@ -91,6 +93,7 @@
             // 
             // btnCreateAcc
             // 
+            this.btnCreateAcc.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCreateAcc.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCreateAcc.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateAcc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -104,6 +107,7 @@
             // 
             // btnDeposit
             // 
+            this.btnDeposit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnDeposit.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDeposit.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeposit.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -113,9 +117,11 @@
             this.btnDeposit.TabIndex = 3;
             this.btnDeposit.Text = "Deposit Money";
             this.btnDeposit.UseVisualStyleBackColor = false;
+            this.btnDeposit.Click += new System.EventHandler(this.btnDeposit_Click);
             // 
             // btnWithdraw
             // 
+            this.btnWithdraw.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnWithdraw.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnWithdraw.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWithdraw.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -125,10 +131,11 @@
             this.btnWithdraw.TabIndex = 4;
             this.btnWithdraw.Text = "Withdraw Money";
             this.btnWithdraw.UseVisualStyleBackColor = false;
-            this.btnWithdraw.Click += new System.EventHandler(this.button3_Click);
+            this.btnWithdraw.Click += new System.EventHandler(this.btnWithdraw_Click);
             // 
             // btnViewBalance
             // 
+            this.btnViewBalance.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnViewBalance.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnViewBalance.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewBalance.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -138,9 +145,11 @@
             this.btnViewBalance.TabIndex = 5;
             this.btnViewBalance.Text = "View Balance";
             this.btnViewBalance.UseVisualStyleBackColor = false;
+            this.btnViewBalance.Click += new System.EventHandler(this.btnViewBalance_Click);
             // 
             // btnTransfer
             // 
+            this.btnTransfer.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnTransfer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTransfer.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransfer.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -150,9 +159,11 @@
             this.btnTransfer.TabIndex = 6;
             this.btnTransfer.Text = "Transfer Money";
             this.btnTransfer.UseVisualStyleBackColor = false;
+            this.btnTransfer.Click += new System.EventHandler(this.btnTransfer_Click);
             // 
             // btnLoan
             // 
+            this.btnLoan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLoan.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLoan.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoan.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -166,6 +177,7 @@
             // 
             // btnTransactionHistory
             // 
+            this.btnTransactionHistory.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnTransactionHistory.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTransactionHistory.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransactionHistory.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -179,6 +191,7 @@
             // 
             // btnLogout
             // 
+            this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnLogout.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLogout.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;

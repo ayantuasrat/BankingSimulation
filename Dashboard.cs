@@ -42,12 +42,38 @@ namespace BankingSimulation
 
         private void btnLoan_Click(object sender, EventArgs e)
         {
-
+            LoanRequestForm loanForm = new LoanRequestForm();
+            loanForm.ShowDialog();
         }
 
         private void btnTransactionHistory_Click(object sender, EventArgs e)
         {
+            TransactionHistoryForm transactionForm=new TransactionHistoryForm();
+            transactionForm.ShowDialog();
+        }
 
+        private void btnDeposit_Click(object sender, EventArgs e)
+        {
+            DepositForm deposit=new DepositForm();
+            deposit.ShowDialog();
+        }
+
+        private void btnWithdraw_Click(object sender, EventArgs e)
+        {
+            WithdrawForm Form=new WithdrawForm();
+            Form.ShowDialog();
+        }
+
+        private void btnTransfer_Click(object sender, EventArgs e)
+        {
+            TransferForm transfer=new TransferForm();
+            transfer.ShowDialog();
+        }
+
+        private void btnViewBalance_Click(object sender, EventArgs e)
+        {
+            ViewBalanceForm balanceForm = new ViewBalanceForm();
+            balanceForm.ShowDialog();
         }
     }
 }
