@@ -68,6 +68,8 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Navy;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(400, 154);
@@ -77,6 +79,8 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -88,6 +92,8 @@
             // 
             // lblAcount
             // 
+            this.lblAcount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAcount.AutoSize = true;
             this.lblAcount.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblAcount.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -100,6 +106,8 @@
             // 
             // cmbAccounts
             // 
+            this.cmbAccounts.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbAccounts.FormattingEnabled = true;
             this.cmbAccounts.Location = new System.Drawing.Point(434, 305);
             this.cmbAccounts.Name = "cmbAccounts";
@@ -108,6 +116,8 @@
             // 
             // lblAmount
             // 
+            this.lblAmount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAmount.AutoSize = true;
             this.lblAmount.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblAmount.Font = new System.Drawing.Font("Verdana", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -120,6 +130,8 @@
             // 
             // txtLoanAmount
             // 
+            this.txtLoanAmount.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtLoanAmount.Location = new System.Drawing.Point(434, 392);
             this.txtLoanAmount.Multiline = true;
             this.txtLoanAmount.Name = "txtLoanAmount";
@@ -128,6 +140,8 @@
             // 
             // btnRequestLoan
             // 
+            this.btnRequestLoan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRequestLoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnRequestLoan.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRequestLoan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -141,6 +155,8 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.BackColor = System.Drawing.Color.Black;
             this.btnCancel.Font = new System.Drawing.Font("Verdana", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -169,6 +185,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "LoanRequestForm";
             this.Text = "LoanRequestForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.LoanRequestForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

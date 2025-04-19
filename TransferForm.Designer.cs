@@ -50,7 +50,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, -4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1340, 118);
+            this.panel1.Size = new System.Drawing.Size(1366, 118);
             this.panel1.TabIndex = 1;
             // 
             // label1
@@ -58,9 +58,9 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.GhostWhite;
+            this.label1.BackColor = System.Drawing.Color.Navy;
             this.label1.Font = new System.Drawing.Font("Stencil", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(507, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(332, 47);
@@ -102,7 +102,7 @@
             this.cmbFromAccount.FormattingEnabled = true;
             this.cmbFromAccount.Location = new System.Drawing.Point(413, 323);
             this.cmbFromAccount.Name = "cmbFromAccount";
-            this.cmbFromAccount.Size = new System.Drawing.Size(799, 28);
+            this.cmbFromAccount.Size = new System.Drawing.Size(825, 28);
             this.cmbFromAccount.TabIndex = 7;
             // 
             // lblTo
@@ -126,7 +126,7 @@
             this.cmbToAccount.FormattingEnabled = true;
             this.cmbToAccount.Location = new System.Drawing.Point(413, 394);
             this.cmbToAccount.Name = "cmbToAccount";
-            this.cmbToAccount.Size = new System.Drawing.Size(799, 28);
+            this.cmbToAccount.Size = new System.Drawing.Size(825, 28);
             this.cmbToAccount.TabIndex = 9;
             // 
             // lblAmount
@@ -150,7 +150,7 @@
             this.txtAmount.Location = new System.Drawing.Point(413, 459);
             this.txtAmount.Multiline = true;
             this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Size = new System.Drawing.Size(799, 38);
+            this.txtAmount.Size = new System.Drawing.Size(825, 38);
             this.txtAmount.TabIndex = 11;
             // 
             // btnTransfer
@@ -161,7 +161,7 @@
             this.btnTransfer.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransfer.Location = new System.Drawing.Point(626, 535);
             this.btnTransfer.Name = "btnTransfer";
-            this.btnTransfer.Size = new System.Drawing.Size(166, 55);
+            this.btnTransfer.Size = new System.Drawing.Size(192, 55);
             this.btnTransfer.TabIndex = 12;
             this.btnTransfer.Text = "Transfer";
             this.btnTransfer.UseVisualStyleBackColor = false;
@@ -176,7 +176,7 @@
             this.btnCancel.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCancel.Location = new System.Drawing.Point(626, 625);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(166, 55);
+            this.btnCancel.Size = new System.Drawing.Size(192, 55);
             this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -188,7 +188,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BankingSimulation.Properties.Resources.Registering_pic;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1341, 797);
+            this.ClientSize = new System.Drawing.Size(1367, 886);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnTransfer);
             this.Controls.Add(this.txtAmount);
@@ -201,6 +201,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "TransferForm";
             this.Text = "TransferForm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TransferForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

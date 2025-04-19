@@ -43,7 +43,8 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.SystemColors.GrayText;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnBackToLogin);
@@ -53,19 +54,21 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(290, 201);
+            this.panel1.Location = new System.Drawing.Point(375, 249);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(558, 392);
+            this.panel1.Size = new System.Drawing.Size(626, 437);
             this.panel1.TabIndex = 0;
             // 
             // btnBackToLogin
             // 
+            this.btnBackToLogin.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnBackToLogin.BackColor = System.Drawing.SystemColors.ControlText;
             this.btnBackToLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackToLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBackToLogin.Location = new System.Drawing.Point(251, 299);
+            this.btnBackToLogin.Location = new System.Drawing.Point(251, 316);
             this.btnBackToLogin.Name = "btnBackToLogin";
-            this.btnBackToLogin.Size = new System.Drawing.Size(151, 50);
+            this.btnBackToLogin.Size = new System.Drawing.Size(174, 60);
             this.btnBackToLogin.TabIndex = 6;
             this.btnBackToLogin.Text = "Back to login";
             this.btnBackToLogin.UseVisualStyleBackColor = false;
@@ -73,11 +76,13 @@
             // 
             // btnRegister
             // 
+            this.btnRegister.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.Location = new System.Drawing.Point(251, 243);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(151, 50);
+            this.btnRegister.Size = new System.Drawing.Size(174, 51);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
@@ -85,23 +90,29 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtPassword.Location = new System.Drawing.Point(157, 173);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(373, 44);
+            this.txtPassword.Size = new System.Drawing.Size(429, 44);
             this.txtPassword.TabIndex = 4;
             // 
             // txtUsername
             // 
+            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUsername.Location = new System.Drawing.Point(157, 103);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(373, 44);
+            this.txtUsername.Size = new System.Drawing.Size(429, 44);
             this.txtUsername.TabIndex = 3;
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(30, 171);
@@ -112,6 +123,8 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(30, 103);
@@ -122,19 +135,24 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Navy;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(-2, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(558, 81);
+            this.panel2.Size = new System.Drawing.Size(626, 81);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Stencil", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(100, 18);
+            this.label1.Location = new System.Drawing.Point(164, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(350, 47);
             this.label1.TabIndex = 0;
@@ -146,7 +164,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::BankingSimulation.Properties.Resources.Registering_pic;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1162, 824);
+            this.ClientSize = new System.Drawing.Size(1333, 920);
             this.Controls.Add(this.panel1);
             this.Name = "RegisterForm";
             this.Text = "RegisterForm";

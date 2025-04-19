@@ -49,7 +49,8 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Navy;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 1);
@@ -59,7 +60,8 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Stencil", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -71,7 +73,8 @@
             // 
             // panel2
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(442, 152);
@@ -82,6 +85,8 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -93,7 +98,8 @@
             // 
             // btnCreateAcc
             // 
-            this.btnCreateAcc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCreateAcc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCreateAcc.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnCreateAcc.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateAcc.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -107,7 +113,8 @@
             // 
             // btnDeposit
             // 
-            this.btnDeposit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnDeposit.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeposit.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnDeposit.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeposit.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -121,7 +128,8 @@
             // 
             // btnWithdraw
             // 
-            this.btnWithdraw.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnWithdraw.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnWithdraw.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnWithdraw.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWithdraw.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -135,7 +143,8 @@
             // 
             // btnViewBalance
             // 
-            this.btnViewBalance.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnViewBalance.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnViewBalance.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnViewBalance.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewBalance.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -149,7 +158,8 @@
             // 
             // btnTransfer
             // 
-            this.btnTransfer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnTransfer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTransfer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTransfer.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransfer.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -163,7 +173,8 @@
             // 
             // btnLoan
             // 
-            this.btnLoan.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLoan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLoan.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLoan.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoan.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -177,7 +188,8 @@
             // 
             // btnTransactionHistory
             // 
-            this.btnTransactionHistory.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnTransactionHistory.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTransactionHistory.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTransactionHistory.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTransactionHistory.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -191,7 +203,8 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogout.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLogout.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ButtonFace;

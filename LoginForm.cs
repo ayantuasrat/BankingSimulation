@@ -47,5 +47,10 @@ namespace BankingSimulation
                 MessageBox.Show("Invalid Username or password");
             }
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
