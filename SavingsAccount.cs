@@ -2,7 +2,7 @@ using System;
 
 namespace BankingSimulation
 {
-    public class SavingsAccount : Account
+    public class SavingsAccount : Account, IAccountOperations
     {
         public SavingsAccount(string name, decimal initialDeposit)
             : base(name, initialDeposit)
