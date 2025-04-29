@@ -14,6 +14,8 @@ namespace BankingSimulation
 
         public Account(string name, decimal initialDeposit)
         {
+            if (string.IsNullOrWhiteSpace(name))
+                throw new ArgumentException("Name cannot be empty.", nameof(name));
             Name = name;
             Balance = initialDeposit;
             AccountNumber = GenerateAccountNumber();
