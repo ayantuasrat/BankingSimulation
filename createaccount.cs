@@ -34,7 +34,20 @@ namespace BankingSimulation
                 MessageBox.Show("Please enter a valid deposit amount.");
                 return;
             }
-            BankAccount account = new BankAccount(name, accountType, deposit);
+            Account account;
+            if (accountType == "Savings")
+            {
+                account = new SavingsAccount(name, deposit);
+            }
+            else if (accountType == "Checking")
+            {
+                account = new CheckingAccount(name, deposit);
+            }
+            else
+            {
+                MessageBox.Show("Invalid account type selected.");
+                return;
+            }
             BankData.Accounts.Add(account);
 
             MessageBox.Show($"Account created!\nAccount Number: {account.AccountNumber}");
