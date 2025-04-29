@@ -2,8 +2,6 @@
 
 A C# Windows Forms application that simulates basic banking operations, including account creation, deposits, withdrawals, transfers, loans, and transaction history.
 
----
-
 ## Features
 
 - User registration and login
@@ -13,8 +11,6 @@ A C# Windows Forms application that simulates basic banking operations, includin
 - Request and manage loans
 - View transaction history
 - Dashboard for easy navigation
-
----
 
 ## Getting Started
 
@@ -26,7 +22,6 @@ A C# Windows Forms application that simulates basic banking operations, includin
 2. Open `BankingSimulation.sln` in Visual Studio.
 3. Build and run the solution.
 
----
 
 ## Group Members
 
