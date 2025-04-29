@@ -11,6 +11,7 @@ namespace BankingSimulation
         public string Name { get; set; }
         public decimal Balance { get; set; }
         public string AccountNumber { get; set; }
+        public string AccountType { get; set;
 
         public Account(string name, decimal initialDeposit)
         {
@@ -19,6 +20,7 @@ namespace BankingSimulation
             Name = name;
             Balance = initialDeposit;
             AccountNumber = GenerateAccountNumber();
+            AccountType = GetType().Name.Replace("Account", "");
         }
 
         private string GenerateAccountNumber()
