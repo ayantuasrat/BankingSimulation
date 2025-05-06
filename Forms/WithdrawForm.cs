@@ -27,33 +27,48 @@ namespace BankingSimulation
 
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
+ 
             if (cmbAccountNumber.SelectedItem == null)
             {
                 MessageBox.Show("Please select an account.");
                 return;
             }
-            string input = txtAmount.Text.Trim();
-            if (!decimal.TryParse(input, out decimal amount) || amount <= 0)
+
+            if (!decimal.TryParse(txtAmount.Text.Trim(), out decimal amount) || amount <= 0)
             {
-                MessageBox.Show("Enter a valid withdrawal amount.");
+                MessageBox.Show("Please enter a valid positive amount.");
                 return;
             }
-            string selected=cmbAccountNumber.SelectedItem.ToString();
-            string accNumber=selected.Split(',')[0].Trim();
 
-            var account=BankData.Accounts.FirstOrDefault(a=>a.AccountNumber == accNumber);
+            string selected = cmbAccountNumber.SelectedItem.ToString();
+            string accNum = selected.Split('-')[0].Trim();
+
+            var account = BankData.Accounts.FirstOrDefault(a => a.AccountNumber == accNum);
             if (account != null)
             {
                 if (account.Balance >= amount)
                 {
                     account.Balance -= amount;
-                    MessageBox.Show($"Withdraw ${amount} from account {account.AccountNumber}");
+
+                    Transaction withdrawTransaction = new Transaction(
+                        accNum,
+                        "Withdraw",
+                        amount,
+                        "Withdrawal made"
+                    );
+                    BankData.Transactions.Add(withdrawTransaction);
+
+                    MessageBox.Show($"Withdrawal successful! New balance: {account.Balance:C}");
                     this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Insufficient Balance.");
+                    MessageBox.Show("Insufficient balance.");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Account not found.");
             }
 
 

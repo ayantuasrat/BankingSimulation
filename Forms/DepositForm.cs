@@ -37,33 +37,48 @@ namespace BankingSimulation
 
         private void btnDeposit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Deposit button was clicked");
-            if(cmbAccountNumber.SelectedItem == null)
+            
+            if (cmbAccountNumber.SelectedItem == null)
             {
                 MessageBox.Show("Please select an account.");
                 return;
             }
-            string input = txtAmount.Text.Trim();
 
-            if( !decimal.TryParse(input,out decimal amount) || amount <= 0)
+            if (!decimal.TryParse(txtAmount.Text.Trim(), out decimal amount) || amount <= 0)
             {
-                MessageBox.Show("Enter a valid deposit amount.");
+                MessageBox.Show("Please enter a valid positive amount.");
                 return;
             }
-            string selected=cmbAccountNumber.SelectedItem.ToString();
-            string accNumber=selected.Split(',')[0].Trim();
 
-            var account=BankData.Accounts.FirstOrDefault(a=>a.AccountNumber == accNumber);
-            if (account !=null)
+            // Extract account number from combo box item
+            string selected = cmbAccountNumber.SelectedItem.ToString();
+            string accNum = selected.Split('-')[0].Trim(); // e.g. "12345 - Checking"
+
+            // Find the account
+            var account = BankData.Accounts.FirstOrDefault(a => a.AccountNumber == accNum);
+            if (account != null)
             {
                 account.Balance += amount;
-                MessageBox.Show($"Successfully deposited ${amount} to account {account.AccountNumber}");
+
+                // Add a transaction log
+                Transaction depositTransaction = new Transaction
+                {
+                    AccountNumber = accNum,
+                    Type = "Deposit",
+                    Amount = amount,
+                    Date = DateTime.Now,
+                    Note = "Deposit made"
+                };
+                BankData.Transactions.Add(depositTransaction);
+
+                MessageBox.Show($"Deposit successful! New balance: {account.Balance:C}");
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Account not found!");
+                MessageBox.Show("Account not found.");
             }
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

@@ -25,35 +25,64 @@ namespace BankingSimulation
 
         private void LoanRequestForm_Load(object sender, EventArgs e)
         {
+            cmbAccounts.Items.Clear();
+            foreach (var acc in BankData.Accounts)
+            {
+                cmbAccounts.Items.Add($"{acc.AccountNumber} - {acc.Name}");
+            }
+
+            if (cmbAccounts.Items.Count > 0)
+                cmbAccounts.SelectedIndex = 0;
 
         }
 
         private void btnRequestLoan_Click(object sender, EventArgs e)
         {
-            if(cmbAccounts.SelectedItem == null)
+            if (cmbAccounts.SelectedItem == null)
             {
-                MessageBox.Show("Please Select an account.");
-                return;
-
-            }
-            decimal loanAmount;
-            if(!decimal.TryParse(txtLoanAmount.Text.Trim(), out loanAmount) || loanAmount <= 0)
-            {
-                MessageBox.Show("Enter valid loan amount.");
+                MessageBox.Show("Please select an account.");
                 return;
             }
-            string selected=cmbAccounts.SelectedItem.ToString();
-            string accNum=selected.Split(',')[0].Trim();
 
-            Loan loan = new Loan(accNum, loanAmount);
-            BankData.Loans.Add(loan);
+            if (!decimal.TryParse(txtLoanAmount.Text.Trim(), out decimal loanAmount) || loanAmount <= 0)
+            {
+                MessageBox.Show("Enter a valid loan amount.");
+                return;
+            }
+
+            string selected = cmbAccounts.SelectedItem.ToString();
+            string accNum = selected.Split('-')[0].Trim();
 
             var account = BankData.Accounts.FirstOrDefault(a => a.AccountNumber == accNum);
-            if(account != null)
+            if (account == null)
             {
-                account.Balance += loanAmount;
+                MessageBox.Show("Account not found.");
+                return;
             }
-            MessageBox.Show($"Loan of ${loanAmount} approved.\n Account{accNum} new balance: ${account.Balance:F2}");
+
+            // Update balance
+            account.Balance += loanAmount;
+
+            // Log the loan
+            Loan loan = new Loan
+            {
+                AccountNumber = accNum,
+                Amount = loanAmount,
+                InterestRate = 0.05, // or set your preferred rate
+                IsApproved = true
+            };
+            BankData.Loans.Add(loan);
+
+            // Log the transaction
+            Transaction loanTransaction = new Transaction(
+                accNum,
+                "Loan",
+                loanAmount,
+                "Loan credited to account"
+            );
+            BankData.Transactions.Add(loanTransaction);
+
+            MessageBox.Show($"Loan of {loanAmount:C} approved.\nAccount {accNum} new balance: {account.Balance:C}");
             this.Close();
         }
 

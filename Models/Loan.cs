@@ -12,6 +12,7 @@ namespace BankingSimulation
         public decimal Amount { get; set; }
         public double InterestRate {  get; set; }
         public bool IsApproved { get; set; }
+        public Loan() { }
 
         public Loan(string accountNumber,decimal amount)
         {

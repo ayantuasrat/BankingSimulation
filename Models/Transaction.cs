@@ -13,7 +13,8 @@ namespace BankingSimulation
         public decimal Amount {  get; set; }
         public DateTime Date { get; set; }
         public string Note {  get; set; }
-        
+
+        public Transaction() { }
         public Transaction(string accountNumber,string type,decimal amount, string note = "")
         {
             AccountNumber = accountNumber;
